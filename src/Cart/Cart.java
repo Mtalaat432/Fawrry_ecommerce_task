@@ -9,7 +9,6 @@ import Product.*;
 public class Cart {
     private List<CartItem> items = new ArrayList<>();
 
-    // Methods
     public void addItem(Product product, int quantity) {
         if (product.getQuantity() < quantity) {
             throw new RuntimeException("Not enough stock for " + product.getName());
